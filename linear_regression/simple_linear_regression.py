@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import timeit
 
-
+# 一元线性回归，模型：y=m*x+b
 def linear_aggression():
     data = np.loadtxt("data.csv", delimiter=',')
 
