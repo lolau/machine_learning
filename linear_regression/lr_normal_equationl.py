@@ -14,7 +14,7 @@ def linear_aggression():
     # 特征缩放
     data = preprocessing.scale(data_raw)
 
-    data = np.insert(data, 0, values=np.ones([len(data)]), axis=1)
+    data = np.insert(data, 0, values=1, axis=1)
 
     train_set_size = int(len(data) * (2 / 3))
 

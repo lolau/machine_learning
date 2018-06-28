@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import timeit
 
+
 # 一元线性回归，模型：y=m*x+b
 def linear_aggression():
     data = np.loadtxt("data.csv", delimiter=',')
@@ -18,7 +19,7 @@ def linear_aggression():
     train_set = data[: train_set_size]
     test_set = data[train_set_size:]
 
-    print("---------------batach gradient descent----------------")
+    print("---------------batch gradient descent----------------")
 
     start_time_bgd = timeit.default_timer()
     m_bgd, b_bgd = batch_gradient_descent(train_set, init_m, init_b, learn_rate, delta)
